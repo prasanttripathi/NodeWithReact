@@ -1,0 +1,102 @@
+C:\NodeJSwithReact\NodewithReactUdemy\server>heroku logs
+2017-12-22T10:04:13.704882+00:00 app[web.1]:
+2017-12-22T10:04:13.705134+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2017-12-22T10:04:13.705325+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2017-12-22T10_04_13_695Z-debug.log
+2017-12-22T10:04:13.834831+00:00 heroku[web.1]: Process exited with status 1
+2017-12-22T10:04:13.853498+00:00 heroku[web.1]: State changed from starting to crashed
+2017-12-22T10:04:17.548151+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cryptic-everglades-68395.herokuapp.com request_id=701bd303-b5dd-45ea-9481-1f56c79e540b fwd="103.16.68.83" dyno= connect= service= status=503 bytes= protocol=https
+2017-12-22T10:04:13.350173+00:00 app[web.1]: (node:20) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/connections.html#use-mongo-client
+2017-12-22T10:04:13.558224+00:00 app[web.1]: Db.prototype.authenticate method will no longer be available in the next major release 3.x as MongoDB 3.6 will only allow auth against users in the admin db and will no longer allow multiple credentials on a socket. Please authenticate using MongoClient.connect with auth credentials.
+2017-12-22T10:04:18.185761+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=cryptic-everglades-68395.herokuapp.com request_id=7ac7c114-2b80-40c3-bd60-b95965d0291a fwd="103.16.68.83" dyno= connect= service= status=503 bytes= protocol=https
+2017-12-22T10:04:22.701370+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/auth/google" host=cryptic-everglades-68395.herokuapp.com request_id=f7a72da0-0b03-4df8-a769-c91620fec5e4 fwd="103.16.68.83" dyno= connect= service= status=503 bytes= protocol=https
+2017-12-22T10:04:23.265162+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=cryptic-everglades-68395.herokuapp.com request_id=6596aecc-3626-4cd7-906d-ddc16b6de5b1 fwd="103.16.68.83" dyno= connect= service= status=503 bytes= protocol=https
+2017-12-22T10:04:30.663867+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=cryptic-everglades-68395.herokuapp.com request_id=03921cb3-7de4-4a0a-8205-7cf14fbde8f3 fwd="103.16.68.83" dyno= connect= service= status=503 bytes= protocol=https
+2017-12-22T10:04:30.041125+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/auth/google/callback" host=cryptic-everglades-68395.herokuapp.com request_id=f0b78d11-6ac0-4c66-8a41-4f40a751c074 fwd="103.16.68.83" dyno= connect= service= status=503 bytes= protocol=https
+2017-12-22T10:07:10.000000+00:00 app[api]: Build started by user prashant30192@gmail.com
+2017-12-22T10:07:25.952502+00:00 app[api]: Release v14 created by user prashant30192@gmail.com
+2017-12-22T10:07:25.952502+00:00 app[api]: Deploy 56e2e29b by user prashant30192@gmail.com
+2017-12-22T10:07:28.467651+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-12-22T10:07:30.523366+00:00 app[web.1]:
+2017-12-22T10:07:30.523379+00:00 app[web.1]: > server@1.0.0 start /app
+2017-12-22T10:07:30.523380+00:00 app[web.1]: > node index.js
+2017-12-22T10:07:30.523381+00:00 app[web.1]:
+2017-12-22T10:07:26.554304+00:00 heroku[web.1]: State changed from crashed to starting
+2017-12-22T10:07:31.155335+00:00 heroku[web.1]: State changed from starting to crashed
+2017-12-22T10:07:31.156977+00:00 heroku[web.1]: State changed from crashed to starting
+2017-12-22T10:07:10.000000+00:00 app[api]: Build succeeded
+2017-12-22T10:07:31.142785+00:00 heroku[web.1]: Process exited with status 1
+2017-12-22T10:07:33.982920+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-12-22T10:07:31.051794+00:00 app[web.1]: module.js:538
+2017-12-22T10:07:31.051809+00:00 app[web.1]:     throw err;
+2017-12-22T10:07:31.051809+00:00 app[web.1]:     ^
+2017-12-22T10:07:31.051810+00:00 app[web.1]:
+2017-12-22T10:07:31.051811+00:00 app[web.1]: Error: Cannot find module './dev'
+2017-12-22T10:07:31.051812+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:536:15)
+2017-12-22T10:07:31.051812+00:00 app[web.1]:     at Function.Module._load (module.js:466:25)
+2017-12-22T10:07:31.051812+00:00 app[web.1]:     at Module.require (module.js:579:17)
+2017-12-22T10:07:31.051813+00:00 app[web.1]:     at require (internal/module.js:11:18)
+2017-12-22T10:07:31.051813+00:00 app[web.1]:     at Object.<anonymous> (/app/config/keys.js:4:18)
+2017-12-22T10:07:31.051814+00:00 app[web.1]:     at Module._compile (module.js:635:30)
+2017-12-22T10:07:31.051826+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:646:10)
+2017-12-22T10:07:31.051827+00:00 app[web.1]:     at Module.load (module.js:554:32)
+2017-12-22T10:07:31.051828+00:00 app[web.1]:     at tryModuleLoad (module.js:497:12)
+2017-12-22T10:07:31.051829+00:00 app[web.1]:     at Module.require (module.js:579:17)
+2017-12-22T10:07:31.051829+00:00 app[web.1]:     at Function.Module._load (module.js:489:3)
+2017-12-22T10:07:31.051830+00:00 app[web.1]:     at require (internal/module.js:11:18)
+2017-12-22T10:07:31.051831+00:00 app[web.1]:     at Module._compile (module.js:635:30)
+2017-12-22T10:07:31.059956+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-12-22T10:07:31.051831+00:00 app[web.1]:     at Object.<anonymous> (/app/services/passport.js:4:14)
+2017-12-22T10:07:31.051833+00:00 app[web.1]:     at Module.load (module.js:554:32)
+2017-12-22T10:07:31.061391+00:00 app[web.1]: npm ERR! server@1.0.0 start: `node index.js`
+2017-12-22T10:07:31.051832+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:646:10)
+2017-12-22T10:07:31.060266+00:00 app[web.1]: npm ERR! errno 1
+2017-12-22T10:07:31.061532+00:00 app[web.1]: npm ERR! Exit status 1
+2017-12-22T10:07:31.061739+00:00 app[web.1]: npm ERR!
+2017-12-22T10:07:31.061903+00:00 app[web.1]: npm ERR! Failed at the server@1.0.0 start script.
+2017-12-22T10:07:31.062062+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2017-12-22T10:07:31.067915+00:00 app[web.1]:
+2017-12-22T10:07:31.068039+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2017-12-22T10:07:31.068122+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2017-12-22T10_07_31_063Z-debug.log
+2017-12-22T10:07:37.343014+00:00 app[web.1]:
+2017-12-22T10:07:37.343028+00:00 app[web.1]: > server@1.0.0 start /app
+2017-12-22T10:07:37.343029+00:00 app[web.1]: > node index.js
+2017-12-22T10:07:37.343029+00:00 app[web.1]:
+2017-12-22T10:07:38.418381+00:00 heroku[web.1]: State changed from starting to crashed
+2017-12-22T10:07:38.910639+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cryptic-everglades-68395.herokuapp.com request_id=18f7b24b-6ce8-4a7d-9e3a-87f16c78b7a0 fwd="103.16.68.83" dyno= connect= service= status=503 bytes= protocol=https
+2017-12-22T10:07:39.667671+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=cryptic-everglades-68395.herokuapp.com request_id=ef8b5164-6e38-4922-a896-883e89ff14dc fwd="103.16.68.83" dyno= connect= service= status=503 bytes= protocol=https
+2017-12-22T10:07:38.222974+00:00 app[web.1]: module.js:538
+2017-12-22T10:07:38.222990+00:00 app[web.1]:
+2017-12-22T10:07:38.222988+00:00 app[web.1]:     throw err;
+2017-12-22T10:07:38.222989+00:00 app[web.1]:     ^
+2017-12-22T10:07:38.222991+00:00 app[web.1]: Error: Cannot find module './dev'
+2017-12-22T10:07:38.222992+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:536:15)
+2017-12-22T10:07:38.222993+00:00 app[web.1]:     at Function.Module._load (module.js:466:25)
+2017-12-22T10:07:38.222994+00:00 app[web.1]:     at Module.require (module.js:579:17)
+2017-12-22T10:07:38.222994+00:00 app[web.1]:     at require (internal/module.js:11:18)
+2017-12-22T10:07:38.222995+00:00 app[web.1]:     at Object.<anonymous> (/app/config/keys.js:4:18)
+2017-12-22T10:07:38.222995+00:00 app[web.1]:     at Module._compile (module.js:635:30)
+2017-12-22T10:07:38.222996+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:646:10)
+2017-12-22T10:07:38.222997+00:00 app[web.1]:     at tryModuleLoad (module.js:497:12)
+2017-12-22T10:07:38.222996+00:00 app[web.1]:     at Module.load (module.js:554:32)
+2017-12-22T10:07:38.222998+00:00 app[web.1]:     at Function.Module._load (module.js:489:3)
+2017-12-22T10:07:38.223000+00:00 app[web.1]:     at Module._compile (module.js:635:30)
+2017-12-22T10:07:38.222998+00:00 app[web.1]:     at Module.require (module.js:579:17)
+2017-12-22T10:07:38.223001+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:646:10)
+2017-12-22T10:07:38.222999+00:00 app[web.1]:     at require (internal/module.js:11:18)
+2017-12-22T10:07:38.222999+00:00 app[web.1]:     at Object.<anonymous> (/app/services/passport.js:4:14)
+2017-12-22T10:07:38.223001+00:00 app[web.1]:     at Module.load (module.js:554:32)
+2017-12-22T10:07:38.250381+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-12-22T10:07:38.250981+00:00 app[web.1]: npm ERR! errno 1
+2017-12-22T10:07:38.254511+00:00 app[web.1]: npm ERR! server@1.0.0 start: `node index.js`
+2017-12-22T10:07:38.254765+00:00 app[web.1]: npm ERR! Exit status 1
+2017-12-22T10:07:38.255522+00:00 app[web.1]: npm ERR!
+2017-12-22T10:07:38.255813+00:00 app[web.1]: npm ERR! Failed at the server@1.0.0 start script.
+2017-12-22T10:07:38.256053+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2017-12-22T10:07:38.266651+00:00 app[web.1]:
+2017-12-22T10:07:38.266933+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2017-12-22T10:07:38.267108+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2017-12-22T10_07_38_262Z-debug.log
+2017-12-22T10:07:38.405931+00:00 heroku[web.1]: Process exited with status 1
+2017-12-22T10:07:45.351950+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/auth/google" host=cryptic-everglades-68395.herokuapp.com request_id=f30974c7-67b2-4fd0-890b-2a33e02e556a fwd="103.16.68.83" dyno= connect= service= status=503 bytes= protocol=https
+2017-12-22T10:07:45.902955+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=cryptic-everglades-68395.herokuapp.com request_id=5290e0f9-a4fd-46fb-9334-28f6db6a9c2a fwd="103.16.68.83" dyno= connect= service= status=503 bytes= protocol=https
+2017-12-22T10:18:23.078369+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cryptic-everglades-68395.herokuapp.com request_id=3324532b-adda-4365-966d-3b38bf3bec25 fwd="103.16.68.83" dyno= connect= service= status=503 bytes= protocol=https
+2017-12-22T10:18:23.780772+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=cryptic-everglades-68395.herokuapp.com request_id=6154123c-9e5e-42b6-ba42-685ccc01a7aa fwd="103.16.68.83" dyno= connect= service= status=503 bytes= protocol=https
